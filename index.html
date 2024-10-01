@@ -1,133 +1,157 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en"><head>
+<html style="font-size: 16px;" lang="en">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="​Al Ain FC, ​Al Wahda, ​Al Jazira">
     <meta name="description" content="">
     <title>Home</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="index.css" media="screen">
+    <link rel="stylesheet" href="index.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 6.18.5, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"logo": "images/image-removebg-preview.png"
-}</script>
-    <meta name="theme-color" content="#2a5977">
-    <meta property="og:title" content="Home">
-    <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-palette-1-dark-3 u-header" id="sec-aba7"><div class="u-clearfix u-sheet u-sheet-1">
+
+    <style>
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%; /* 75% of the page width */
+            height: 75%; /* 75% of the page height */
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            overflow: hidden;
+        }
+
+        .popup iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+<header class="u-clearfix u-header u-palette-1-dark-3 u-header" id="sec-aba7">
+    <div class="u-clearfix u-sheet u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1" data-image-width="744" data-image-height="335">
-          <img src="images/image-removebg-preview.png" class="u-logo-image u-logo-image-1">
+            <img src="images/image-removebg-preview.png" class="u-logo-image u-logo-image-1">
         </a>
-      </div></header>
-    <section class="u-align-center u-clearfix u-image u-section-1" id="carousel_f109" data-image-width="1472" data-image-height="832">
-      <div class="u-clearfix u-sheet u-sheet-1">
+    </div>
+</header>
+<section class="u-align-center u-clearfix u-image u-section-1" id="carousel_f109" data-image-width="1472" data-image-height="832">
+    <div class="u-clearfix u-sheet u-sheet-1">
         <div id="carousel-0b8f" data-interval="5000" data-u-ride="carousel" class="u-carousel u-expanded-width u-slider u-slider-1">
-          <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
-            <li data-u-target="#carousel-0b8f" class="u-active u-palette-5-dark-2 u-shape-circle" data-u-slide-to="0" style="width: 10px; height: 10px;"></li>
-            <li data-u-target="#carousel-0b8f" class="u-palette-5-dark-2 u-shape-circle" data-u-slide-to="1" style="width: 10px; height: 10px;"></li>
-            <li data-u-target="#carousel-0b8f" class="u-palette-5-dark-2 u-shape-circle" data-u-slide-to="2" style="width: 10px; height: 10px;"></li>
-          </ol>
-          <div class="u-carousel-inner" role="listbox">
-            <div class="u-active u-align-center u-carousel-item u-container-style u-slide">
-              <div class="u-container-layout u-container-layout-1">
-                <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Al Ain FC</h2>
-                <div class="custom-expanded u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
-                  <div class="u-gallery-inner u-gallery-inner-1">
-                    <div class="u-effect-fade u-gallery-item" data-image-width="500" data-image-height="500">
-                      <div class="u-back-slide">
-                        <img class="u-back-image u-expanded" src="images/alain-removebg-preview.png">
-                      </div>
-                      <div class="u-over-slide u-shading u-over-slide-1"></div>
+            <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+                <li data-u-target="#carousel-0b8f" class="u-active u-palette-5-dark-2 u-shape-circle" data-u-slide-to="0" style="width: 10px; height: 10px;"></li>
+                <li data-u-target="#carousel-0b8f" class="u-palette-5-dark-2 u-shape-circle" data-u-slide-to="1" style="width: 10px; height: 10px;"></li>
+                <li data-u-target="#carousel-0b8f" class="u-palette-5-dark-2 u-shape-circle" data-u-slide-to="2" style="width: 10px; height: 10px;"></li>
+            </ol>
+            <div class="u-carousel-inner" role="listbox">
+                <div class="u-active u-align-center u-carousel-item u-container-style u-slide">
+                    <div class="u-container-layout u-container-layout-1">
+                        <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1"> Al Ain FC</h2>
+                        <div class="custom-expanded u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
+                            <div class="u-gallery-inner u-gallery-inner-1">
+                                <div class="u-effect-fade u-gallery-item" data-image-width="500" data-image-height="500">
+                                    <div class="u-back-slide">
+                                        <img class="u-back-image u-expanded" src="images/alain-removebg-preview.png">
+                                    </div>
+                                    <div class="u-over-slide u-shading u-over-slide-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-base u-radius u-text-white u-btn-1" onclick="openPopup('https://chatgpt.com')">Select</a>
                     </div>
-                  </div>
                 </div>
-                <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-base u-radius u-text-white u-btn-1">Select </a>
-              </div>
-              <style data-mode="XL"></style>
-              <style data-mode="LG"></style>
-              <style data-mode="MD"></style>
-              <style data-mode="SM"></style>
-              <style data-mode="XS"></style>
-            </div>
-            <div class="u-align-center u-carousel-item u-container-style u-slide">
-              <div class="u-container-layout u-container-layout-2">
-                <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-2"> Al Wahda&nbsp;</h2>
-                <div class="custom-expanded u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-2">
-                  <div class="u-gallery-inner u-gallery-inner-2">
-                    <div class="u-effect-fade u-gallery-item" data-image-width="500" data-image-height="500">
-                      <div class="u-back-slide">
-                        <img class="u-back-image u-expanded" src="images/al-wahda-football-school-removebg-preview.png">
-                      </div>
-                      <div class="u-over-slide u-shading u-over-slide-2"></div>
+                <div class="u-align-center u-carousel-item u-container-style u-slide">
+                    <div class="u-container-layout u-container-layout-2">
+                        <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-2"> Al Wahda&nbsp;</h2>
+                        <div class="custom-expanded u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-2">
+                            <div class="u-gallery-inner u-gallery-inner-2">
+                                <div class="u-effect-fade u-gallery-item" data-image-width="500" data-image-height="500">
+                                    <div class="u-back-slide">
+                                        <img class="u-back-image u-expanded" src="images/al-wahda-football-school-removebg-preview.png">
+                                    </div>
+                                    <div class="u-over-slide u-shading u-over-slide-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-base u-radius u-text-white u-btn-2" onclick="openPopup('https://chatgpt.com')">Select</a>
                     </div>
-                  </div>
                 </div>
-                <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-base u-radius u-text-white u-btn-2">Select </a>
-              </div>
-              <style data-mode="XL"></style>
-              <style data-mode="LG"></style>
-              <style data-mode="MD"></style>
-              <style data-mode="SM"></style>
-              <style data-mode="XS"></style>
-            </div>
-            <div class="u-align-center u-carousel-item u-container-style u-slide">
-              <div class="u-container-layout u-container-layout-3">
-                <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-3"> Al Jazira</h2>
-                <div class="custom-expanded u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-3">
-                  <div class="u-gallery-inner u-gallery-inner-3">
-                    <div class="u-effect-fade u-gallery-item" data-image-width="500" data-image-height="500">
-                      <div class="u-back-slide">
-                        <img class="u-back-image u-expanded" src="images/ajc-opengraph-logo-removebg-preview.png">
-                      </div>
-                      <div class="u-over-slide u-shading u-over-slide-3"></div>
+                <div class="u-align-center u-carousel-item u-container-style u-slide">
+                    <div class="u-container-layout u-container-layout-3">
+                        <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-3"> Al Jazira</h2>
+                        <div class="custom-expanded u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-3">
+                            <div class="u-gallery-inner u-gallery-inner-3">
+                                <div class="u-effect-fade u-gallery-item" data-image-width="500" data-image-height="500">
+                                    <div class="u-back-slide">
+                                        <img class="u-back-image u-expanded" src="images/ajc-opengraph-logo-removebg-preview.png">
+                                    </div>
+                                    <div class="u-over-slide u-shading u-over-slide-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-base u-radius u-text-white u-btn-3" onclick="openPopup('https://chatgpt.com')">Select</a>
                     </div>
-                  </div>
                 </div>
-                <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-base u-radius u-text-white u-btn-3">Select </a>
-              </div>
-              <style data-mode="XL"></style>
-              <style data-mode="LG"></style>
-              <style data-mode="MD"></style>
-              <style data-mode="SM"></style>
-              <style data-mode="XS"></style>
             </div>
-          </div>
-          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-icon-circle u-palette-5-dark-1 u-spacing-10 u-text-body-alt-color u-carousel-control-1" href="#carousel-0b8f" role="button" data-u-slide="prev">
-            <span aria-hidden="true">
-              <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
-            </span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="u-carousel-control u-carousel-control-next u-icon-circle u-palette-5-dark-1 u-spacing-10 u-text-body-alt-color u-carousel-control-2" href="#carousel-0b8f" role="button" data-u-slide="next">
-            <span aria-hidden="true">
-              <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
-            </span>
-            <span class="sr-only">Next</span>
-          </a>
+            <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-icon-circle u-palette-5-dark-1 u-spacing-10 u-text-body-alt-color u-carousel-control-1" href="#carousel-0b8f" role="button" data-u-slide="prev">
+                <span aria-hidden="true">
+                    <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                            c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+                </span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-icon-circle u-palette-5-dark-1 u-spacing-10 u-text-body-alt-color u-carousel-control-2" href="#carousel-0b8f" role="button" data-u-slide="next">
+                <span aria-hidden="true">
+                    <svg viewBox="0 0 477.175 477.175"><path d="M332.4,238.575L116.9,23.075c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l225.1,225.1c5.3,5.3,5.3,13.8,0,19.1l-225.1,225
+                            c-5.3,5.3-5.3,13.8,0,19.1s13.8,5.3,19.1,0l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1L332.4,238.575z"></path></svg>
+                </span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-      </div>
-    </section>
-    
-    
-    
-    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="sec-1731"><div class="u-clearfix u-sheet u-sheet-1">
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <p class="u-text">
-      </p>
-    </section>
-  
-</body></html>
+    </div>
+</section>
+
+<!-- Popup Overlay -->
+<div class="popup-overlay" id="popup-overlay" onclick="closePopup()"></div>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <iframe id="popup-iframe" src=""></iframe>
+</div>
+
+<script>
+    function openPopup(url) {
+        document.getElementById('popup-iframe').src = url;
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('popup-overlay').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+        document.getElementById('popup-overlay').style.display = 'none';
+        document.getElementById('popup-iframe').src = ""; // Clear the iframe source
+    }
+</script>
+</body>
+</html>
